@@ -1,3 +1,4 @@
+import org.gradle.kotlin.dsl.provider.inLenientMode
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -44,6 +45,19 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.navigation.compose)
+//            implementation(libs.kmpauth.google)
+//            implementation(libs.kmpauth.firebase)
+//            implementation(libs.kmpnotifier)
+//            implementation(libs.firebase.firestore)
+//            implementation(libs.firebase.storage)
+//            implementation(libs.firebase.app)
+//            implementation(libs.firebase.common)
+//            implementation(libs.koin.core)
+//            implementation(libs.koin.test)
+//            implementation(libs.koin.android)
+//            implementation(libs.koin.compose)
+//            implementation(libs.koin.compose.viewmodel)
+//            implementation(libs.koin.compose.viewmodel.navigation)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
