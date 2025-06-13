@@ -2,6 +2,7 @@ package com.example.shared
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.unit.sp
 import nutrisport.shared.generated.resources.BebasNeue_Regular
 import nutrisport.shared.generated.resources.Res
 import nutrisport.shared.generated.resources.RobotoCondensed_Medium
@@ -19,12 +20,12 @@ fun RobotoCondensedFontFamily () = FontFamily(
 )
 
 object FontSize {
-    const val EXTRA_SMALL = 10
-    const val SMALL = 12
-    const val REGULAR = 13
-    const val EXTRA_REGULAR = 16
-    const val MEDIUM = 18
-    const val EXTRA_MEDIUM = 20
-    const val LARGE = 30
-    const val EXTRA_LARGE = 40
+     val EXTRA_SMALL = 10.sp
+     val SMALL = 12.sp
+     val REGULAR = 13.sp
+     val EXTRA_REGULAR = 16.sp
+     val MEDIUM = 18.sp
+     val EXTRA_MEDIUM = 20.sp
+     val LARGE = 30.sp
+     val EXTRA_LARGE = 40.sp
 }
