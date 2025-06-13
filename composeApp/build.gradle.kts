@@ -46,6 +46,7 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtimeCompose)
             implementation(libs.navigation.compose)
+            implementation(project(path = ":feature:auth"))
 //            implementation(libs.kmpauth.google)
 //            implementation(libs.kmpauth.firebase)
 //            implementation(libs.kmpnotifier)
