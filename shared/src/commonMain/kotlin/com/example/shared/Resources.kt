@@ -28,6 +28,8 @@ object Resources {
         val book = Res.drawable.book
         val verticalMenu = Res.drawable.vertical_menu
         val delete = Res.drawable.delete
+        val googleLogo = Res.drawable.google_logo
+        val payPalLogo = Res.drawable.paypal_logo
     }
     object Image {
         val shoppingCart = Res.drawable.shopping_cart_image
