@@ -3,20 +3,20 @@ package com.example.shared
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
-import nutrisport.shared.generated.resources.BebasNeue_Regular
 import nutrisport.shared.generated.resources.Res
-import nutrisport.shared.generated.resources.RobotoCondensed_Medium
+import nutrisport.shared.generated.resources.bebas_neue_regular
+import nutrisport.shared.generated.resources.roboto_condensed_medium
 import org.jetbrains.compose.resources.Font
 
 
 @Composable
 fun BebasNeueFontFamily () = FontFamily(
-    Font(Res.font.BebasNeue_Regular)
+    Font(Res.font.bebas_neue_regular)
 )
 
 @Composable
 fun RobotoCondensedFontFamily () = FontFamily(
-    Font(Res.font.RobotoCondensed_Medium)
+    Font(Res.font.roboto_condensed_medium)
 )
 
 object FontSize {
