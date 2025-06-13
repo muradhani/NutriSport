@@ -11,27 +11,37 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import com.example.shared.Alpha
 import com.example.shared.BebasNeueFontFamily
+import com.example.shared.Black
 import com.example.shared.FontSize
-import com.example.shared.TextSecondary
-import com.example.shared.textBrand
+import com.example.shared.Orange
+import com.example.shared.Surface
 import com.nutrisport.auth.component.GoogleButton
 
 @Composable
 fun AuthScreen(){
-    Scaffold{ padding ->
+    print("hello murad")
+    print(BebasNeueFontFamily())
+    Scaffold (
+        modifier = Modifier.fillMaxSize(),
+        containerColor = Surface
+    ){ padding ->
         Column (
             modifier = Modifier.padding(
                 top = padding.calculateTopPadding(),
                 bottom = padding.calculateBottomPadding()
-            ).fillMaxSize()
+            ).fillMaxSize().padding(horizontal = 20.dp)
         ){
             Column(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.fillMaxWidth().weight(1f),
                 verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Text(
                     modifier = Modifier.fillMaxWidth(),
@@ -39,14 +49,15 @@ fun AuthScreen(){
                     textAlign = TextAlign.Center,
                     fontFamily = BebasNeueFontFamily(),
                     fontSize = FontSize.EXTRA_LARGE,
-                    color = TextSecondary
+                    fontWeight = FontWeight.Normal,
+                    color = Orange
                 )
                 Text(
                     modifier = Modifier.fillMaxWidth().alpha(Alpha.HALF),
                     text = "Sign in to continue",
                     textAlign = TextAlign.Center,
                     fontSize = FontSize.EXTRA_REGULAR,
-                    color = TextSecondary
+                    color = Black
                 )
             }
             GoogleButton(
