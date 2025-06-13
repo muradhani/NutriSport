@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
+    alias(libs.plugins.composeMultiplatform)
+    alias(libs.plugins.composeCompiler)
 }
 
 kotlin {
@@ -60,6 +62,11 @@ kotlin {
             dependencies {
                 implementation(libs.kotlin.stdlib)
                 // Add KMP dependencies here
+                implementation("org.jetbrains.compose.runtime:runtime:1.6.10")
+                implementation("org.jetbrains.compose.foundation:foundation:1.6.10")
+                implementation("org.jetbrains.compose.material3:material3:1.6.10")
+                implementation("org.jetbrains.compose.ui:ui:1.6.10")
+                implementation(compose.components.resources)
             }
         }
 
