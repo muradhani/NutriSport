@@ -62,11 +62,15 @@ kotlin {
             dependencies {
                 implementation(libs.kotlin.stdlib)
                 // Add KMP dependencies here
-                implementation("org.jetbrains.compose.runtime:runtime:1.6.10")
-                implementation("org.jetbrains.compose.foundation:foundation:1.6.10")
-                implementation("org.jetbrains.compose.material3:material3:1.6.10")
-                implementation("org.jetbrains.compose.ui:ui:1.6.10")
+                implementation(compose.runtime)
+                implementation(compose.foundation)
+                implementation(compose.material3)
+                implementation(compose.ui)
                 implementation(compose.components.resources)
+                implementation(compose.components.uiToolingPreview)
+                implementation(libs.androidx.lifecycle.viewmodel)
+                implementation(libs.androidx.lifecycle.runtimeCompose)
+                implementation(libs.navigation.compose)
                 implementation(project(path = ":shared"))
             }
         }
