@@ -16,12 +16,9 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.company.app.Alpha
-import com.company.app.BebasNeueFontFamily
-import com.company.app.Black
-import com.company.app.FontSize
-import com.company.app.Orange
-import com.company.app.Surface
+import com.example.shared.BebasNeueFontFamily
+import com.example.shared.*
+
 
 import com.nutrisport.auth.component.GoogleButton
 

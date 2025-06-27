@@ -71,7 +71,7 @@ kotlin {
                 implementation(libs.androidx.lifecycle.viewmodel)
                 implementation(libs.androidx.lifecycle.runtimeCompose)
                 implementation(libs.navigation.compose)
-                implementation(project(path = ":resources"))
+                implementation(project(path = ":shared"))
             }
         }
 

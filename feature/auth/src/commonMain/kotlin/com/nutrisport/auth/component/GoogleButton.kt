@@ -29,8 +29,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import com.company.app.*
-import com.company.app.Resources
+import com.example.shared.*
+import com.example.shared.IconSecondary
+import com.example.shared.Resources
 import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.painterResource
 
