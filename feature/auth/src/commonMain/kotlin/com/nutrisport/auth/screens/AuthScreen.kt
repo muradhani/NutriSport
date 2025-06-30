@@ -24,8 +24,6 @@ import com.nutrisport.auth.component.GoogleButton
 
 @Composable
 fun AuthScreen(){
-    print("hello murad")
-    print(BebasNeueFontFamily())
     Scaffold (
         modifier = Modifier.fillMaxSize(),
         containerColor = Surface
