@@ -18,7 +18,7 @@ runner = "1.6.2"
 core = "1.6.1"
 runtime = "1.8.2"
 ui = "1.8.2"
-
+auth = "2.3.1"
 [libraries]
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -30,6 +30,8 @@ navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-co
 kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlinStdlib" }
 androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
 androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
+auth-kmp = {module = "io.github.mirzemehdi:kmpauth-google", version.ref = "auth"}
+auth-firebase-kmp = {module = "io.github.mirzemehdi:kmpauth-firebase", version.ref = "auth"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
