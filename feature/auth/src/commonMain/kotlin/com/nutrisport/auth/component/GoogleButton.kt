@@ -43,8 +43,8 @@ fun GoogleButton(
     secondaryText : String = "Please wait...",
     icon : DrawableResource = Resources.Icon.googleLogo,
     shape : Shape = RoundedCornerShape(size = 99.dp),
-    backgroundColor:Color = Gray,
-    borderColor:Color = GrayDarker,
+    backgroundColor:Color = SurfaceLighter,
+    borderColor:Color = SurfaceDarker,
     progressIndicatorColor : Color = IconSecondary,
     onClick : () -> Unit
 ){
